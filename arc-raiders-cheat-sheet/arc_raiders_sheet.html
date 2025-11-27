@@ -1,0 +1,825 @@
+<html lang="en">
+<head>
+    <script>
+        window.data = {
+            rarities: [{
+                name: "gray",
+                primaryColor: "#424d64",
+                gradientTopLeft: "#494d57",
+                gradientBottomRight: "#050d23"
+            }, {
+                name: "green",
+                primaryColor: "#37b14e",
+                gradientTopLeft: "#16492c",
+                gradientBottomRight: "#050d23"
+            }, {
+                name: "blue",
+                primaryColor: "#0082e0",
+                gradientTopLeft: "#063566",
+                gradientBottomRight: "#050d23"
+            }, {
+                name: "purple",
+                primaryColor: "#c2007e",
+                gradientTopLeft: "#551e60",
+                gradientBottomRight: "#050d23"
+            }],
+            tags: [{
+                tagKey: "arc",
+                name: "ARC",
+                image: "icon_arc"
+            }, {
+                tagKey: "exodus",
+                name: "Exodus",
+                image: "icon_exodus"
+            }, {
+                tagKey: "medical",
+                name: "Medical",
+                image: "icon_medical",
+            }, {
+                tagKey: "electrical",
+                name: "Electrical",
+                image: "icon_electrical"
+            }, {
+                tagKey: "mechanical",
+                name: "Mechanical",
+                image: "icon_mechanical",
+            }, {
+                tagKey: "industrial",
+                name: "Industrial",
+                image: "icon_industrial",
+            }, {
+                tagKey: "residential",
+                name: "Residential",
+                image: "icon_residential",
+            }, {
+                tagKey: "security",
+                name: "Security",
+                image: "icon_security"
+            }, {
+                tagKey: "technological",
+                name: "Technological",
+                image: "icon_technological"
+            }, {
+                tagKey: "commercial",
+                name: "Commercial",
+                image: "icon_commercial"
+            }],
+            items: [{
+                itemKey: "leaper_pulse_unit",
+                name: "Leaper Pulse Unit",
+                image: "leaper_pulse_unit",
+                rarity: "purple",
+                price: 5000,
+                weight: 1,
+                tags: ["arc"]
+            },{
+                itemKey: "power_rod",
+                name: "Power Rod",
+                image: "power_rod",
+                rarity: "purple",
+                price: 5500,
+                weight: 1,
+                tags: ["exodus"]
+            },{
+                itemKey: "rocketeer_drive",
+                name: "Rocketeer Drive",
+                image: "rocketeer_drive",
+                rarity: "purple",
+                price: 5000,
+                weight: 1,
+                tags: ["arc"]
+            },{
+                itemKey: "surveyor_vault",
+                name: "Surveyor Vault",
+                image: "surveyor_vault",
+                rarity: "blue",
+                price: 2000,
+                weight: 0.75,
+                tags: ["arc"]
+            },{
+                itemKey: "antiseptic",
+                name: "Antiseptic",
+                image: "antiseptic",
+                rarity: "blue",
+                price: 1000,
+                weight: 1,
+                tags: ["medical"]
+            },{
+                itemKey: "hornet_driver",
+                name: "Hornet Driver",
+                image: "hornet_driver",
+                rarity: "blue",
+                price: 2000,
+                weight: 0.75,
+                tags: ["arc"]
+            },{
+                itemKey: "syringe",
+                name: "Syringe",
+                image: "syringe",
+                rarity: "blue",
+                price: 5000,
+                weight: 0.3,
+                tags: ["medical"]
+            },{
+                itemKey: "wasp_driver",
+                name: "Wasp Driver",
+                image: "wasp_driver",
+                rarity: "blue",
+                price: 1000,
+                weight: 0.6,
+                tags: ["arc", "electrical"]
+            },{
+                itemKey: "water_pump",
+                name: "Water Pump",
+                image: "water_pump",
+                rarity: "blue",
+                price: 1000,
+                weight: 2,
+                tags: ["mechanical", "industrial"]
+            },{
+                itemKey: "snitch_scanner",
+                name: "Snitch Scanner",
+                rarity: "green",
+                price: 2000,
+                weight: 0.75,
+                tags: ["arc"]
+            },{
+                itemKey: "magnetic_accelerator",
+                name: "Magnetic Accelerator",
+                rarity: "purple",
+                price: 5500,
+                weight: 1,
+                tags: ["exodus"]
+            },{
+                itemKey: "exodus_modules",
+                name: "Exodus Modules",
+                rarity: "purple",
+                price: 2750,
+                weight: 1,
+                tags: ["exodus"]
+            },{
+                itemKey: "advanced_electrical_components",
+                name: "Adv. Electrical Components",
+                rarity: "blue",
+                price: 1750,
+                weight: 1,
+                tags: ["electrical"]
+            },{
+                itemKey: "humidifier",
+                name: "Humidifier",
+                rarity: "blue",
+                price: 1000,
+                weight: 2,
+                tags: ["residential"]
+            },{
+                itemKey: "sensors",
+                name: "Sensors",
+                rarity: "blue",
+                price: 500,
+                weight: 0.3,
+                tags: ["technological", "security"]
+            },{
+                itemKey: "cooling_fan",
+                name: "Cooling Fan",
+                rarity: "blue",
+                price: 2000,
+                weight: 3,
+                tags: ["technological"]
+            },{
+                itemKey: "battery",
+                name: "Battery",
+                rarity: "green",
+                price: 250,
+                weight: 0.25,
+                tags: ["technological", "electrical"]
+            },{
+                itemKey: "light_bulb",
+                name: "Light Bulb",
+                rarity: "green",
+                price: 2000,
+                weight: 0.2,
+                tags: ["electrical"]
+            },{
+                itemKey: "electrical_components",
+                name: "Electrical Components",
+                rarity: "green",
+                price: 640,
+                weight: 0.5,
+                tags: ["electrical"]
+            },{
+                itemKey: "wires",
+                name: "Wires",
+                rarity: "green",
+                price: 200,
+                weight: 0.25,
+                tags: ["technological", "electrical"]
+            },{
+                itemKey: "durable_cloth",
+                name: "Durable Cloth",
+                rarity: "green",
+                price: 640,
+                weight: 1.5,
+                tags: ["commercial", "medical"]
+            },{
+                itemKey: "steel_spring",
+                name: "Steel Spring",
+                rarity: "green",
+                price: 300,
+                weight: 0.25,
+                tags: ["technological"]
+            },{
+                itemKey: "arc_alloy",
+                name: "ARC Alloy",
+                rarity: "green",
+                price: 200,
+                weight: 0.25,
+                tags: ["arc"]
+            },{
+                itemKey: "rubber_parts",
+                name: "Rubber Parts",
+                rarity: "gray",
+                price: 50,
+                weight: 0.1,
+                tags: ["mechanical", "electrical", "industrial"]
+            },{
+                itemKey: "metal_parts",
+                name: "Metal Parts",
+                rarity: "gray",
+                price: 50,
+                weight: 0.1,
+                tags: ["technological", "industrial", "mechanical", "electrical"]
+            },],
+
+            sections: [{
+                title: "Keep for Quests",
+                items: [{
+                    itemKey: "leaper_pulse_unit",
+                    itemCount: 1
+                }, {
+                    itemKey: "power_rod",
+                    itemCount: 1
+                }, {
+                    itemKey: "rocketeer_drive",
+                    itemCount: 1
+                }, {
+                    itemKey: "surveyor_vault",
+                    itemCount: 1
+                }, {
+                    itemKey: "antiseptic",
+                    itemCount: 1
+                }, {
+                    itemKey: "hornet_driver",
+                    itemCount: 2
+                }, {
+                    itemKey: "syringe",
+                    itemCount: 1
+                }, {
+                    itemKey: "wasp_driver",
+                    itemCount: 2
+                }, {
+                    itemKey: "water_pump",
+                    itemCount: 1
+                }, {
+                    itemKey: "snitch_scanner",
+                    itemCount: 2
+                }]
+            }, {
+                title: "Keep for Projects",
+                items: [{
+                    itemKey: "leaper_pulse_unit",
+                    itemCount: 3,
+                },{
+                    itemKey: "magnetic_accelerator",
+                    itemCount: 3,
+                },{
+                    itemKey: "exodus_modules",
+                    itemCount: 1,
+                },{
+                    itemKey: "advanced_electrical_components",
+                    itemCount: 5,
+                },{
+                    itemKey: "humidifier",
+                    itemCount: 5,
+                },{
+                    itemKey: "sensors",
+                    itemCount: 20,
+                },{
+                    itemKey: "cooling_fan",
+                    itemCount: 5,
+                },{
+                    itemKey: "battery",
+                    itemCount: 30,
+                },{
+                    itemKey: "light_bulb",
+                    itemCount: 30,
+                },{
+                    itemKey: "electrical_components",
+                    itemCount: 30,
+                },{
+                    itemKey: "wires",
+                    itemCount: 30,
+                },{
+                    itemKey: "durable_cloth",
+                    itemCount: 35,
+                },{
+                    itemKey: "steel_spring",
+                    itemCount: 15,
+                },{
+                    itemKey: "arc_alloy",
+                    itemCount: 80,
+                },{
+                    itemKey: "rubber_parts",
+                    itemCount: 150,
+                },{
+                    itemKey: "metal_parts",
+                    itemCount: 200,
+                },]
+            }],
+
+            images: [
+                {imageKey: "accordion", imageUrl: "icons/accordion.png"},
+                {imageKey: "advanced_electrical_components", imageUrl: "icons/advanced_electrical_components.png"},
+                {imageKey: "advanced_mechanical_components", imageUrl: "icons/advanced_mechanical_components.png"},
+                {imageKey: "alarm_clock", imageUrl: "icons/alarm_clock.png"},
+                {imageKey: "antiseptic", imageUrl: "icons/antiseptic.png"},
+                {imageKey: "apricot", imageUrl: "icons/apricot.png"},
+                {imageKey: "arc_alloy", imageUrl: "icons/arc_alloy.png"},
+                {imageKey: "arc_circuitry", imageUrl: "icons/arc_circuitry.png"},
+                {imageKey: "arc_coolant", imageUrl: "icons/arc_coolant.png"},
+                {imageKey: "arc_flex_rubber", imageUrl: "icons/arc_flex_rubber.png"},
+                {imageKey: "arc_motion_core", imageUrl: "icons/arc_motion_core.png"},
+                {imageKey: "arc_performance_steel", imageUrl: "icons/arc_performance_steel.png"},
+                {imageKey: "arc_synthetic_resin", imageUrl: "icons/arc_synthetic_resin.png"},
+                {imageKey: "arc_thermo_lining", imageUrl: "icons/arc_thermo_lining.png"},
+                {imageKey: "bastion_coil", imageUrl: "icons/bastion_coil.png"},
+                {imageKey: "battery", imageUrl: "icons/battery.png"},
+                {imageKey: "bicycle_pump", imageUrl: "icons/bicycle_pump.png"},
+                {imageKey: "bombadier_cell", imageUrl: "icons/bombadier_cell.png"},
+                {imageKey: "broken_flashlight", imageUrl: "icons/broken_flashlight.png"},
+                {imageKey: "broken_guidance_system", imageUrl: "icons/broken_guidance_system.png"},
+                {imageKey: "broken_handcuffs", imageUrl: "icons/broken_handcuffs.png"},
+                {imageKey: "broken_handheld_radio", imageUrl: "icons/broken_handheld_radio.png"},
+                {imageKey: "broken_taser", imageUrl: "icons/broken_taser.png"},
+                {imageKey: "burned_arc_circuitry", imageUrl: "icons/burned_arc_circuitry.png"},
+                {imageKey: "camera_lens", imageUrl: "icons/camera_lens.png"},
+                {imageKey: "candle_holder", imageUrl: "icons/candle_holder.png"},
+                {imageKey: "cat_bed", imageUrl: "icons/cat_bed.png"},
+                {imageKey: "coolant", imageUrl: "icons/coolant.png"},
+                {imageKey: "cooling_coil", imageUrl: "icons/cooling_coil.png"},
+                {imageKey: "cooling_fan", imageUrl: "icons/cooling_fan.png"},
+                {imageKey: "cracked_bioscanner", imageUrl: "icons/cracked_bioscanner.png"},
+                {imageKey: "crude_explosives", imageUrl: "icons/crude_explosives.png"},
+                {imageKey: "crumpled_plastic_bottle", imageUrl: "icons/crumpled_plastic_bottle.png"},
+                {imageKey: "damaged_arc_motion_core", imageUrl: "icons/damaged_arc_motion_core.png"},
+                {imageKey: "damaged_arc_power_cell", imageUrl: "icons/damaged_arc_power_cell.png"},
+                {imageKey: "damaged_heat_sink", imageUrl: "icons/damaged_heat_sink.png"},
+                {imageKey: "defalted_football", imageUrl: "icons/defalted_football.png"},
+                {imageKey: "humidifier", imageUrl: "icons/humidifier.png"},
+                {imageKey: "diving_goggles", imageUrl: "icons/diving_goggles.png"},
+                {imageKey: "dog_collar", imageUrl: "icons/dog_collar.png"},
+                {imageKey: "dried_out_arc_resin", imageUrl: "icons/dried_out_arc_resin.png"},
+                {imageKey: "durable_cloth", imageUrl: "icons/durable_cloth.png"},
+                {imageKey: "electrical_components", imageUrl: "icons/electrical_components.png"},
+                {imageKey: "exodus_modules", imageUrl: "icons/exodus_modules.png"},
+                {imageKey: "expired_respirator", imageUrl: "icons/expired_respirator.png"},
+                {imageKey: "explosive_compound", imageUrl: "icons/explosive_compound.png"},
+                {imageKey: "fireball_burner", imageUrl: "icons/fireball_burner.png"},
+                {imageKey: "flute", imageUrl: "icons/flute.png"},
+                {imageKey: "fried_motherboard", imageUrl: "icons/fried_motherboard.png"},
+                {imageKey: "frying_pan", imageUrl: "icons/frying_pan.png"},
+                {imageKey: "garlic_press", imageUrl: "icons/garlic_press.png"},
+                {imageKey: "headphones", imageUrl: "icons/headphones.png"},
+                {imageKey: "hornet_driver", imageUrl: "icons/hornet_driver.png"},
+                {imageKey: "household_cleaner", imageUrl: "icons/household_cleaner.png"},
+                {imageKey: "ice_cream_scooper", imageUrl: "icons/ice_cream_scooper.png"},
+                {imageKey: "icon_arc", imageUrl: "icons/icon_arc.png"},
+                {imageKey: "icon_commercial", imageUrl: "icons/icon_commercial.png"},
+                {imageKey: "icon_credit", imageUrl: "icons/icon_credit.png"},
+                {imageKey: "icon_electrical", imageUrl: "icons/icon_electrical.png"},
+                {imageKey: "icon_exodus", imageUrl: "icons/icon_exodus.png"},
+                {imageKey: "icon_industrial", imageUrl: "icons/icon_industrial.png"},
+                {imageKey: "icon_mechanical", imageUrl: "icons/icon_mechanical.png"},
+                {imageKey: "icon_medical", imageUrl: "icons/icon_medical.png"},
+                {imageKey: "icon_nature", imageUrl: "icons/icon_nature.png"},
+                {imageKey: "icon_residential", imageUrl: "icons/icon_residential.png"},
+                {imageKey: "icon_security", imageUrl: "icons/icon_security.png"},
+                {imageKey: "icon_technological", imageUrl: "icons/icon_technological.png"},
+                {imageKey: "icon_weight", imageUrl: "icons/icon_weight.png"},
+                {imageKey: "icon_wrench", imageUrl: "icons/icon_wrench.png"},
+                {imageKey: "impure_arc_coolant", imageUrl: "icons/impure_arc_coolant.png"},
+                {imageKey: "industrial_battery", imageUrl: "icons/industrial_battery.png"},
+                {imageKey: "industrial_charger", imageUrl: "icons/industrial_charger.png"},
+                {imageKey: "industrial_magnet", imageUrl: "icons/industrial_magnet.png"},
+                {imageKey: "laboratory_reagents", imageUrl: "icons/laboratory_reagents.png"},
+                {imageKey: "leaper_pulse_unit", imageUrl: "icons/leaper_pulse_unit.png"},
+                {imageKey: "lemon", imageUrl: "icons/lemon.png"},
+                {imageKey: "light_bulb", imageUrl: "icons/light_bulb.png"},
+                {imageKey: "magnetic_accelerator", imageUrl: "icons/magnetic_accelerator.png"},
+                {imageKey: "mechanical_components", imageUrl: "icons/mechanical_components.png"},
+                {imageKey: "metal_brackets", imageUrl: "icons/metal_brackets.png"},
+                {imageKey: "metal_parts", imageUrl: "icons/metal_parts.png"},
+                {imageKey: "motor", imageUrl: "icons/motor.png"},
+                {imageKey: "mushroom", imageUrl: "icons/mushroom.png"},
+                {imageKey: "number_plate", imageUrl: "icons/number_plate.png"},
+                {imageKey: "olives", imageUrl: "icons/olives.png"},
+                {imageKey: "polluted_air_filter", imageUrl: "icons/polluted_air_filter.png"},
+                {imageKey: "pop_trigger", imageUrl: "icons/pop_trigger.png"},
+                {imageKey: "portable_tv", imageUrl: "icons/portable_tv.png"},
+                {imageKey: "power_bank", imageUrl: "icons/power_bank.png"},
+                {imageKey: "power_cable", imageUrl: "icons/power_cable.png"},
+                {imageKey: "power_rod", imageUrl: "icons/power_rod.png"},
+                {imageKey: "prickly_pear", imageUrl: "icons/prickly_pear.png"},
+                {imageKey: "projector", imageUrl: "icons/projector.png"},
+                {imageKey: "radio", imageUrl: "icons/radio.png"},
+                {imageKey: "remote_control", imageUrl: "icons/remote_control.png"},
+                {imageKey: "ripped_safety_vest", imageUrl: "icons/ripped_safety_vest.png"},
+                {imageKey: "rocketeer_drive", imageUrl: "icons/rocketeer_drive.png"},
+                {imageKey: "rubber_pad", imageUrl: "icons/rubber_pad.png"},
+                {imageKey: "rubber_parts", imageUrl: "icons/rubber_parts.png"},
+                {imageKey: "ruined_accordion", imageUrl: "icons/ruined_accordion.png"},
+                {imageKey: "ruined_baton", imageUrl: "icons/ruined_baton.png"},
+                {imageKey: "ruined_handcuffs", imageUrl: "icons/ruined_handcuffs.png"},
+                {imageKey: "ruined_parachute", imageUrl: "icons/ruined_parachute.png"},
+                {imageKey: "ruined_riot_shield", imageUrl: "icons/ruined_riot_shield.png"},
+                {imageKey: "ruined_tactical_vest", imageUrl: "icons/ruined_tactical_vest.png"},
+                {imageKey: "rusted_bolts", imageUrl: "icons/rusted_bolts.png"},
+                {imageKey: "rusted_gear", imageUrl: "icons/rusted_gear.png"},
+                {imageKey: "rusted_shut_medical_kit", imageUrl: "icons/rusted_shut_medical_kit.png"},
+                {imageKey: "rusted_tools", imageUrl: "icons/rusted_tools.png"},
+                {imageKey: "rusty_arc_steel", imageUrl: "icons/rusty_arc_steel.png"},
+                {imageKey: "sensors", imageUrl: "icons/sensors.png"},
+                {imageKey: "sentinel_firing_core", imageUrl: "icons/sentinel_firing_core.png"},
+                {imageKey: "snitch_scanner", imageUrl: "icons/snitch_scanner.png"},
+                {imageKey: "spotter_relay", imageUrl: "icons/spotter_relay.png"},
+                {imageKey: "spring_cushion", imageUrl: "icons/spring_cushion.png"},
+                {imageKey: "steel_spring", imageUrl: "icons/steel_spring.png"},
+                {imageKey: "surveyor_vault", imageUrl: "icons/surveyor_vault.png"},
+                {imageKey: "synthesized_fuel", imageUrl: "icons/synthesized_fuel.png"},
+                {imageKey: "syringe", imageUrl: "icons/syringe.png"},
+                {imageKey: "tattered_arc_lining", imageUrl: "icons/tattered_arc_lining.png"},
+                {imageKey: "tattered_clothes", imageUrl: "icons/tattered_clothes.png"},
+                {imageKey: "thermostat", imageUrl: "icons/thermostat.png"},
+                {imageKey: "tick_pod", imageUrl: "icons/tick_pod.png"},
+                {imageKey: "toaster", imageUrl: "icons/toaster.png"},
+                {imageKey: "torn_blanket", imageUrl: "icons/torn_blanket.png"},
+                {imageKey: "turbo_pump", imageUrl: "icons/turbo_pump.png"},
+                {imageKey: "very_comfortable_pillow", imageUrl: "icons/very_comfortable_pillow.png"},
+                {imageKey: "wasp_driver", imageUrl: "icons/wasp_driver.png"},
+                {imageKey: "water_filter", imageUrl: "icons/water_filter.png"},
+                {imageKey: "water_pump", imageUrl: "icons/water_pump.png"},
+                {imageKey: "wires", imageUrl: "icons/wires.png"}]
+        }
+    </script>
+    <style lang="css">
+        :root {
+            --text-off-white: #f9eddf;
+            --text-faded-gray: #919191;
+            --text-yellow: #ffbc13;
+            --pill-background-color: #131821;
+            --divider-color: #877f7f;
+            --item-card-text-part-background: #1c263a;
+        }
+
+        body {
+            background-color: black;
+            background-image: url("background-image.png");
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        * {
+            font-family: Arial, sans-serif;
+            /* Make text that is missing exact styling visible */
+            color: deeppink;
+        }
+
+        a {
+            color: unset;
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        .main-content {
+            width: 850px;
+        }
+
+        .yellow-text {
+            color: var(--text-yellow);
+        }
+
+        .underlined {
+            text-decoration: underline;
+        }
+
+        .item-count-pill {
+            border: 1px solid var(--text-off-white);
+            border-radius: 100px;
+            padding: 0.3rem 1.6rem;
+            background-color: var(--pill-background-color);
+        }
+
+        .divider-line {
+            background-color: var(--divider-color);
+            flex-grow: 1;
+            height: 2px;
+        }
+
+        .off-white * {
+            color: var(--text-off-white)
+        }
+
+        /* aspect ratio of the item card was 0.96118721461 */
+        .item-card {
+            width: 150px;
+            aspect-ratio: 0.96118721461;
+            background-color: var(--rarity-primary-color);
+            /* Due to css constraints, x and y radius must be specified separately according to item aspect ratio. */
+            border-radius: 2.375296912% / 2.283105022%;
+
+            border: 2px solid var(--rarity-primary-color);
+
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .item-image-part {
+            flex-grow: 0;/*0.685;*/
+            aspect-ratio: 1.39977477477;
+            background: var(--item-image-url) no-repeat center center, linear-gradient(135deg, var(--rarity-gradient-start-color), var(--rarity-gradient-end-color));
+            background-size: contain;
+            mask-image: linear-gradient(45deg, transparent 17%, black 17%), radial-gradient(circle at 34% 52%, black 50%, transparent 50%);
+            position: relative;
+        }
+
+        .item-text-part {
+            flex-grow: 1; /*calc(1 - 0.685);*/
+            background-color: var(--item-card-text-part-background);
+            padding: 7px;
+            position: relative;
+        }
+
+        .item-tag {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 1rem;
+            }
+
+            span {
+                color: var(--text-faded-gray);
+                font-size: 0.5rem;
+            }
+        }
+
+        .item-name {
+            color: var(--text-off-white);
+            font-weight: bold;
+            font-size: .75rem;
+        }
+
+        .top-left-resource-type-icon {
+            width: 1.3rem;
+            aspect-ratio: 1;
+            position: absolute;
+        }
+
+        .top-right-resource-count {
+            color: var(--text-yellow);
+            position: absolute;
+            right: 4px;
+            top: 3px;
+        }
+
+        .bottom-right-price {
+            position: absolute;
+            bottom: 3px;
+            right: 3px;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            span {
+                font-size: 0.8rem;
+                padding-top: 0.16rem;
+                color: var(--text-off-white);
+            }
+        }
+
+        .item-weight {
+            position: absolute;
+            right: 4px;
+            bottom: 4px;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: .85rem;
+            }
+
+            span {
+                color: var(--text-off-white);
+                font-size: .7rem;
+                padding-top: 0.1rem;
+                padding-left: 0.15rem;
+            }
+        }
+
+        .section-items {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            width: 100%;
+            height: 2.5rem;
+            border: 2px solid var(--text-off-white);
+            background-color: #2e3241;
+            border-radius: 100px;
+            margin: 20px 0;
+            padding: 0 10px;
+            color: var(--text-off-white);
+        }
+    </style>
+
+    <script>
+        fetch(location.href).then(async response => {
+            const text = await response.text();
+            setInterval(() => {
+                fetch(location.href)
+                    .then(async newResponse => {
+                        if (text !== await newResponse.text()) {
+                            location.reload();
+                        }
+                    })
+            }, 1000);
+        });
+    </script>
+
+    <script>
+        window.searchListeners = [];
+        window.onload = () => {
+            const raritiesByKey = Object.fromEntries(window.data.rarities.map(rarity => [rarity.name, rarity]));
+            const tagsByTagKey = Object.fromEntries(window.data.tags.map(tag => [tag.tagKey, tag]));
+            const itemsByKey = Object.fromEntries(window.data.items.map(item => [item.itemKey, item]));
+            const imagesByKey = Object.fromEntries(window.data.images.map(image => [image.imageKey, image]));
+
+            function createItemTagNode(tagKey) {
+                const itemTagNode = document.getElementById("template-item-tag").content.cloneNode(true);
+                const tagData = tagsByTagKey[tagKey];
+                if (!tagData) {
+                    alert(`Tag not known: "${tagKey}"`);
+                    return;
+                }
+
+                itemTagNode.querySelector(".tag-icon").src = imagesByKey[tagData.image]?.imageUrl;
+                itemTagNode.querySelector(".tag-text").innerText = tagData.name;
+                return itemTagNode;
+            }
+
+            function createItemNode(itemKey, itemCount) {
+                const itemData = itemsByKey[itemKey];
+
+                const itemNode = document.getElementById("template-item").content.cloneNode(true).children[0];
+
+                const rarity = raritiesByKey[itemData.rarity];
+
+                itemNode.style.cssText = `
+                --item-image-url: url("${imagesByKey[itemData.image || itemData.itemKey]?.imageUrl}");
+                --rarity-primary-color: ${rarity.primaryColor};
+                --rarity-gradient-start-color: ${rarity.gradientTopLeft};
+                --rarity-gradient-end-color: ${rarity.gradientBottomRight};
+                `
+
+                if (!itemData) {
+                    alert(`Item not known: "${itemKey}"`)
+                    return;
+                }
+
+                const itemCountNode = itemNode.querySelector(".top-right-resource-count");
+
+                if (itemCount) {
+                    itemCountNode.innerText = `${itemCount}x`;
+                } else {
+                    itemCountNode.remove();
+                }
+
+                itemNode.querySelector(".price-text").innerText = itemData.price;
+                itemNode.querySelector(".item-name").innerText = itemData.name;
+                itemNode.querySelector(".item-weight-text").innerText = itemData.weight;
+
+                const tagsNode = itemNode.querySelector(".item-tags");
+                itemData.tags.forEach(tag => {
+                    tagsNode.append(createItemTagNode(tag));
+                });
+
+                window.searchListeners.push((text) => {
+                    if (searchMatches(itemData.name, text)) {
+                        itemNode.style.display = "flex";
+                    } else {
+                        itemNode.style.display = "none";
+                    }
+                });
+
+                return itemNode;
+            }
+
+            function searchMatches(itemName, searchTerm) {
+                return itemName.toLowerCase().includes(searchTerm.toLowerCase());
+            }
+
+            function createSection(title, items) {
+                const sectionNode = document.getElementById("template-section").content.cloneNode(true);
+
+                sectionNode.querySelector(".section-headline").innerText = title;
+                sectionNode.querySelector(".item-count-pill").innerText = items.length + " ITEMS";
+                const itemsSection = sectionNode.querySelector(".section-items");
+
+                for (let item of items) {
+                    itemsSection.append(createItemNode(item.itemKey, item.itemCount));
+                }
+
+                return sectionNode;
+            }
+
+            const sections = document.getElementById("sections");
+            for (let section of window.data.sections) {
+                const sectionNode = createSection(section.title, section.items);
+                sections.append(sectionNode);
+            }
+
+            const searchInputNode = document.getElementById("search-input");
+            searchInputNode.oninput = () => {
+                console.log("OnChange")
+                window.searchListeners.forEach(listener => listener(searchInputNode.value))
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="main-content">
+    <h1 class="yellow-text">ARC Raiders Recycling Cheat Sheet</h1>
+    <h3 class="yellow-text underlined">Made by <a href="TODO">u/pRoDeeD</a></h3>
+    <h3 class="yellow-text underlined">Interactivity added by u/ZainlessBrombie</h3>
+
+    <label>
+        <input type="text" class="search-bar" id="search-input" placeholder="Search Item...">
+    </label>
+
+    <div id="sections" class="sections">
+
+    </div>
+</div>
+<template id="template-section">
+    <div class="off-white" style="display: flex; flex-direction: row; width: 100%; align-items: center; gap: 10px;">
+        <h2 class="section-headline">Keep for Projects</h2>
+        <div class="item-count-pill">16 ITEMS</div>
+        <div class="divider-line"></div>
+    </div>
+    <div class="section-items">
+        <!-- Insert template-item here -->
+    </div>
+</template>
+<template id="template-item">
+    <div class="item-card">
+        <!-- total content height: 1296 <= 888 + 408 AKA 0.685 to   -->
+        <div class="item-image-part">
+            <img src="wrench_icon.png" class="top-left-resource-type-icon" alt=""/>
+            <div class="top-right-resource-count">3x</div>
+            <div class="bottom-right-price">
+                <img src="money_icon.png" alt="" style="width: 1rem; aspect-ratio: 1"/>
+                <span class="price-text">5000</span>
+            </div>
+        </div>
+
+        <div class="item-text-part">
+            <div class="item-name">Leaper Pulse Unit</div>
+            <div class="item-tags">
+                <!-- Insert template-item-tag here -->
+            </div>
+            <div class="item-weight">
+                <img src="weight_icon.png" alt="weight">
+                <span class="item-weight-text">0.25</span>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="template-item-tag">
+    <div class="item-tag">
+        <img class="tag-icon" src="arc_icon.png" alt=""/>
+        <span class="tag-text">Technological</span>
+    </div>
+</template>
+</body>
+</html>
